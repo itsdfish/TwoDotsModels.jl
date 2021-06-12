@@ -46,7 +46,7 @@ end
 function can_connect(dots, list, r, c)
     if !is_in_bounds(dots, r, c)
         return false 
-    elseif in_set(dots[r,c], list)
+    elseif dots[r,c] ∈ list
         return false
     elseif !is_adjecent(list[end], dots[r,c])
         return false 
@@ -62,12 +62,3 @@ function is_in_bounds(dots, r, c)
 end    
 
 color_matches(dot1, dot2) = dot1.color == dot2.color
-
-function in_set(dot::Dot, dots)
-    for d in dots 
-        if d.row == dot.row && d.col == dot.col
-            return true
-        end
-    end
-    return false
-end

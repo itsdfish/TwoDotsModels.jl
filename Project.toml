@@ -12,7 +12,7 @@ TwoDots = "6b60b763-0cec-4562-851a-49a11e6530ef"
 [compat]
 Distributions = "v0.25.3"
 SafeTestsets = "v0.0.1"
-StatsFuns = "v0.9.8"
+StatsFuns = "v0.9.8, 1"
 TwoDots = "v0.2.1"
 julia = "1"
 
